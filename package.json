@@ -5,26 +5,19 @@
   "license": "MIT",
   "version": "1.0.3",
   "type": "module",
-  "main": "./dist/my-lib.umd.cjs",
-  "module": "./dist/my-lib.js",
   "types": "./dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/himadri312/typelib.git"
   },
+  "files": ["dist"],
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
   "keywords": ["typescript", "vite"],
-  "exports": {
-    ".": {
-      "import": "./dist/my-lib.js",
-      "require": "./dist/my-lib.umd.cjs"
-    }
-  },
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "rmdir /s dist && tsc && vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
