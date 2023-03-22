@@ -1,9 +1,8 @@
 {
-  "name": "typelib",
+  "name": "typelib-himadri",
   "description": "This is a type lib",
   "author": "Himadri Shekhar",
   "license": "MIT",
-  "private": true,
   "version": "1.0.0",
   "type": "module",
   "main": "./dist/my-lib.umd.cjs",
@@ -12,6 +11,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/himadri312/typelib.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   },
   "keywords": ["typescript", "vite"],
   "exports": {
