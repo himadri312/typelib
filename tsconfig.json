@@ -1,19 +1,24 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "useDefineForClassFields": true,
     "module": "ESNext",
-    "lib": ["ESNext", "DOM"],
+    "target": "ES6",
+    "lib": ["ES6", "DOM", "ES2016", "ES2017", "ESNext"],
     "moduleResolution": "Node",
-    "strict": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "esModuleInterop": true,
-    "noEmit": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
+    "esModuleInterop": true,
     "noImplicitReturns": true,
-    "skipLibCheck": true
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "allowSyntheticDefaultImports": true,
+    "isolatedModules": true,
+    "useDefineForClassFields": true,
+    "strict": true,
+    "resolveJsonModule": true,
+    "declaration": true,
+    "skipLibCheck": true,
+    "outDir": "dist"
   },
-  "include": ["src"]
+  "include": ["src", "vite.config.ts"],
 }
