@@ -1,11 +1,19 @@
 {
   "name": "typelib",
+  "description": "This is a type lib",
+  "author": "Himadri Shekhar",
+  "license": "MIT",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "main": "./dist/my-lib.umd.cjs",
   "module": "./dist/my-lib.js",
   "types": "./dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/himadri312/typelib.git"
+  },
+  "keywords": ["typescript", "vite"],
   "exports": {
     ".": {
       "import": "./dist/my-lib.js",
