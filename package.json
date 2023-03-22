@@ -3,7 +3,7 @@
   "description": "This is a type lib",
   "author": "Himadri Shekhar",
   "license": "MIT",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "type": "module",
   "main": "./dist/my-lib.umd.cjs",
   "module": "./dist/my-lib.js",
@@ -13,7 +13,7 @@
     "url": "https://github.com/himadri312/typelib.git"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://registry.npmjs.org/"
   },
   "keywords": ["typescript", "vite"],
   "exports": {
